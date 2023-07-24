@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  kubectl:
+    image: kubectl:latest
+    container_name: kubectl-latest-test
+    volumes:
+      - /etc/localtime:/etc/localtime
+
+# docker-compose -f docker-compose.yml up -d
